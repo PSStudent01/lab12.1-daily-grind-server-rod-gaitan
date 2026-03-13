@@ -15,8 +15,22 @@ const app = express(); // Creates an Express application instance
 ////////////////////////////  ///////////////////////////////
 
 // 4)
-app.get(
+app.get('/', (req, res) => {  // Creating a route for the homepage
+    res.sendFile(path.join(__dirname, 'public/index.html')); // Now, when you run this server and go to http://localhost:3000, Express will look in the public folder...
+                                                             // for an 'index.html' file and 'serve it automatically'.
+                                                            // '__dirname 'is a special Node.js variable that always contains the absolute path to the directory...
+                                                            //  where the currently executing script (server.js) is located.
+                                                            // this says "hey when user visits the homepage ('/') with a GET request, i want you to look for the 'index.html'...
+                                                            // file inside the 'public' folder and and serve it!"
+})
 
 
-    
-)
+
+
+//const PORT = 3000
+
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
+
+
