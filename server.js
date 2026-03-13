@@ -33,6 +33,7 @@ app.get('/contact', (req, res) => {   // Creating a route for the 'Contact' page
 
 //////////////////////// Server /////////////////////
 
+// 6)
 app.listen(3000, () => {     // Starts the server on listening port 3000
   console.log('Server running on port 3000'); // message displaye don server if server runs succesfully
 });
