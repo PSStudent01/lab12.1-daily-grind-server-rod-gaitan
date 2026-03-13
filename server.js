@@ -12,3 +12,11 @@ const app = express(); // Creates an Express application instance
                         // - defining routes
                         // - starting the server
 
+////////////////////////////  ///////////////////////////////
+
+// 4)
+app.get(
+
+
+    
+)
